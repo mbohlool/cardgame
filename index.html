@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Game Tracker</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="card-picker">
+            <div class="cards" id="cards">
+                <!-- Card images will be dynamically inserted here -->
+            </div>
+        </div>
+        <div class="controls" id="action-controls">
+            <button id="pick-btn">Pick Up</button>
+            <button id="discard-btn">Discard</button>
+        </div>
+        <div class="game-state">
+            <div class="pile" id="discarded-cards-display">
+                <div class="pile-label">Discarded</div>
+                <div class="cards" id="discarded-cards"></div>
+            </div>
+            <div class="pile" id="picked-cards-display">
+                <div class="pile-label">Picked Up</div>
+                <div class="cards" id="picked-cards"></div>
+            </div>
+        </div>
+        <div class="controls" id="history-controls">
+            <button id="undo-btn">Undo</button>
+            <button id="redo-btn">Redo</button>
+        </div>
+        <div class="hotkey-confirmation" id="hotkey-confirmation"></div>
+    </div>
+    <script src="js/state.js"></script>
+    <script src="js/utils.js"></script>
+    <script src="js/hotkeys.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
